@@ -1,0 +1,335 @@
+@import url("css_extra/reset.css");
+/*   
+Theme Name: Hopkins Manor
+Theme URI: http://scottmccarthydesign.com
+Description: A simple Wordpress theme
+Author: Scott McCarthy
+Author URI: http://scottmccarthydesign.com
+Version: 1
+*/
+/* Typography
+-------------------------------------------------------------- */
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font: normal 100%/1.6 "chaparral-pro", georgia, serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #4b4f53;
+  text-shadow: 0 1px white; }
+
+p, li {
+  font-size: 1.2em;
+  line-height: 1.65em;
+  margin: 0 auto 1.75em;
+  text-shadow: 0 1px white; }
+
+strong {
+  font-weight: 600;
+  font-size: 115%;
+  text-transform: uppercase; }
+
+ul {
+  margin-bottom: 1.75em;
+  list-style: disc; }
+
+figure img {
+  margin-bottom: 0; }
+
+figcaption {
+  margin: 0 auto 1.75em; }
+
+/* Navigation
+-------------------------------------------------------------- */
+.navigation_container {
+  background-color: rgba(255, 255, 255, 0.95);
+  display: block;
+  width: 100%;
+  min-width: 1160px;
+  height: 4em;
+  border-bottom: 1px solid #e2e2e2;
+  clear: both;
+  position: fixed;
+  top: 0;
+  z-index: 100; }
+  .navigation_container ul {
+    float: right;
+    padding-right: 4em;
+    padding-top: 1.2em;
+    list-style: none;
+    padding-top: 1.45em;
+    font-size: .9em; }
+    .navigation_container ul li {
+      font-size: 1.2em;
+      float: left;
+      margin-left: 1.8em; }
+      .navigation_container ul li a {
+        color: #4b4f53; }
+        .navigation_container ul li a:hover {
+          color: #699db1; }
+    .navigation_container ul li.current_page_item a {
+      color: #699db1 !important; }
+  .navigation_container a.logo {
+    font-size: 2em;
+    font-weight: 600;
+    margin-left: 1.5em;
+    line-height: 2.2em;
+    letter-spacing: -1px;
+    color: #699db1; }
+
+.logged-in .navigation_container {
+  top: 1.6em; }
+
+/* Headers
+-------------------------------------------------------------- */
+h2 {
+  font-size: 2em;
+  color: #699db1;
+  font-weight: 500; }
+
+h3, h4 {
+  font-size: 1.3em;
+  font-weight: 600; }
+
+/* Links
+-------------------------------------------------------------- */
+a {
+  text-decoration: none; }
+
+h1 a, h2 a, h3 a {
+  color: #484848; }
+
+/* Global Styles
+-------------------------------------------------------------- */
+body {
+  background: url(images/tile.jpg) repeat; }
+
+img {
+  box-shadow: 0 1px white;
+  border: 1px solid #bdbdbd; }
+
+p.quote {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #699db1; }
+
+.contentcontainer {
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 5em; }
+
+/* Page: Home
+-------------------------------------------------------------- */
+.wf-chaparralpro-i4-active h1 span {
+  padding: 0em .3em !important;
+  line-height: 1.4em; }
+
+#splash {
+  background-image: url(images/homeimage.jpg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 980px;
+  margin: 0 auto;
+  height: 100%;
+  height: 33em;
+  z-index: 0;
+  background-position: -14em 0em; }
+
+.backgroundsize #splash {
+  background-image: url(images/homeimage.jpg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 1160px;
+  height: 33em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  z-index: 0;
+  background-position: center top; }
+
+.home .contentcontainer {
+  padding-top: 5em;
+  padding-bottom: 3em; }
+.home .title {
+  margin-left: 5em;
+  margin-top: 13%;
+  position: absolute;
+  min-width: 40em; }
+  .home .title h1 {
+    font-size: 4.5em;
+    color: #346B85; }
+    .home .title h1 span {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: .1em .3em !important;
+      line-height: 1.5em;
+      letter-spacing: -1px;
+      text-shadow: 0 1px rgba(255, 255, 255, 0.69);
+      border: 1px solid #B1B1B1;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      font-weight: 600; }
+.home .entry p {
+  width: 48%;
+  margin: 0;
+  float: left; }
+.home img.right, .home p.quote {
+  float: right !important;
+  width: 45% !important; }
+
+@media screen and (max-width: 1100px) {
+  .title {
+    margin-top: 13em !important; } }
+/* Page: Others
+-------------------------------------------------------------- */
+.page-template-page-default-php .entry {
+  width: 80%;
+  margin: 0 auto; }
+  .page-template-page-default-php .entry h2 {
+    font-size: 1.75em;
+    margin-bottom: .4em;
+    clear: both;
+    line-height: 1.2em;
+    margin-top: 2em; }
+  .page-template-page-default-php .entry h2 {
+    clear: both; }
+  .page-template-page-default-php .entry img {
+    width: 20em;
+    margin: .2em 1.6em 1em 0em;
+    float: left; }
+
+.page-id-19 .entry ul, .page-id-23 .entry ul {
+  margin-bottom: 2.4em; }
+  .page-id-19 .entry ul:after, .page-id-23 .entry ul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .page-id-19 .entry ul li, .page-id-23 .entry ul li {
+    margin: 0 .2em .7em 0;
+    margin-left: 1em;
+    padding-right: 0.8em;
+    line-height: 1.4em;
+    width: 28%;
+    float: left; }
+
+.page-id-19 h2 {
+  font-size: 1.75em;
+  margin-bottom: .4em;
+  border-bottom: 3px solid #D3D8DB;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.73);
+  clear: both;
+  line-height: 1.2em;
+  padding-bottom: 0.4em; }
+
+.page-id-113 .entry h2 {
+  clear: none; }
+.page-id-113 .entry h4 {
+  font-size: 1.6em;
+  line-height: 1.2em;
+  margin-top: 2em;
+  margin-bottom: 1.5em; }
+.page-id-113 .entry a {
+  color: #4b4f53;
+  text-decoration: underline; }
+.page-id-113 .entry h5 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #699db1;
+  margin-top: -1em; }
+.page-id-113 .entry ul li {
+  margin-bottom: .3em; }
+.page-id-113 .entry iframe {
+  float: right;
+  width: 21em;
+  height: 20em;
+  margin-top: 0;
+  margin-bottom: 3em;
+  margin-left: 3em; }
+
+.page-id-23 .entry li {
+  width: 45% !important; }
+
+.page-id-30 .entry ul {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.4em 3em;
+  background: rgba(255, 255, 255, 0.7);
+  float: none; }
+  .page-id-30 .entry ul li {
+    margin-bottom: .5em; }
+
+.page-id-25 .entry {
+  width: 100%;
+  text-shadow: none; }
+.page-id-25 thead, .page-id-25 tbody {
+  background: white; }
+.page-id-25 table.fc-header tbody {
+  background: none !important; }
+.page-id-25 #aec-filter {
+  display: none; }
+.page-id-25 #jGrowl {
+  display: none; }
+.page-id-25 .contentcontainer {
+  padding-top: 5.5em; }
+
+.wp-image-100 {
+  width: 9em !important; }
+
+.wp-image-95 {
+  width: 9em !important; }
+
+.wp-image-11 {
+  width: 17em !important; }
+
+.wp-image-71 {
+  width: 17em !important; }
+
+.wp-image-74 {
+  width: 13em !important; }
+
+.wp-image-88 {
+  width: 15em !important;
+  float: right !important;
+  margin: 0 0 0 2em !important; }
+
+/* Footer
+-------------------------------------------------------------- */
+#footer {
+  background: #BDC9CF;
+  width: 100%;
+  min-width: 1160px; }
+  #footer p {
+    padding: 2em;
+    float: left;
+    font-size: 1.3em;
+    color: white;
+    text-shadow: 0 1px #8E9BA3; }
+  #footer p.phone {
+    float: right; }
+
+/* Media
+-------------------------------------------------------------- */
+img {
+  max-width: 100%;
+  width: auto;
+  /*width: 100%;*/
+  margin-bottom: 1.75em; }
+
+img, iframe {
+  box-shadow: 0 1px #FFF;
+  border: 1px solid #BDBDBD; }
+
+/* Hidden Content
+-------------------------------------------------------------- */
+.meta, .postmetadata {
+  display: none; }
+
+.post-edit-link {
+  clear: both;
+  margin-top: 2em;
+  display: block; }
