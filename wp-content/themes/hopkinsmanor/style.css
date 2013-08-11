@@ -324,6 +324,17 @@ img, iframe {
   box-shadow: 0 1px #FFF;
   border: 1px solid #BDBDBD; }
 
+.calendar iframe {
+  width: 1020px;
+  height: 690px; }
+  .calendar iframe .view {
+    background: none !important; }
+  .calendar iframe .goog-toolbar {
+    background: none !important;
+    border: 0 !important; }
+  .calendar iframe #content-pane {
+    background-color: none !important; }
+
 /* Hidden Content
 -------------------------------------------------------------- */
 .meta, .postmetadata {
