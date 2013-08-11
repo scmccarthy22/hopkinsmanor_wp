@@ -454,6 +454,22 @@ img, iframe {
 border: 1px solid #BDBDBD;
 }
 
+.calendar iframe {
+	width: 1020px;
+	height: 690px;
+	
+	.view {background: none !important;}
+	
+	.goog-toolbar {
+		background: none !important;
+		border: 0 !important;
+	}
+	
+	#content-pane {
+		background-color: none !important;
+	}
+	
+}
 
 
 
